@@ -1,9 +1,10 @@
 // backend/gemini.js
+
 // not working dude to rate limit and api call cooldown
 
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const genAI = new GoogleGenerativeAI("AIzaSyBeZ4VUu9K8L3jig4ElpmwH_3hxUARSnag"); // or replace with your key in quotes
+const genAI = new GoogleGenerativeAI("api key"); // or replace with your key in quotes
 
 const generationConfig = {
   temperature: 0.3,
