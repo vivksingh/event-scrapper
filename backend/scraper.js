@@ -5,7 +5,7 @@ import * as cheerio from "cheerio";
 import mongoose from "mongoose";
 import { Event } from "./server.js";
 
-const MONGO_URI = "mongodb://localhost:27017/event_scraper";
+const MONGO_URI = "mongodb+srv://vivksing655:amankijai@cluster0.gqhf0sq.mongodb.net/";
 
 export default async function scrapeTimeoutSydney() {
   try {
