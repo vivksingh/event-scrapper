@@ -9,7 +9,7 @@ import scrapeTimeoutSydney from "./scraper.js";
 
 const app = express();
 const PORT = 5000;
-const MONGO_URI = "mongodb://localhost:27017/event_scraper";
+const MONGO_URI = "mongodb+srv://vivksing655:amankijai@cluster0.gqhf0sq.mongodb.net/";
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -97,7 +97,7 @@ app.post("/api/subscribe", async (req, res) => {
 });
 
 // scraper evry 10 mins
-cron.schedule("*/10 * * * *", async () => {
+cron.schedule("*/2 * * * *", async () => {
   console.log("Running scheduled scraper...");
   await scrapeTimeoutSydney();
 });
