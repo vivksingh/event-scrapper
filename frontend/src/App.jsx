@@ -10,7 +10,7 @@ const EventProvider = ({ children }) => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch("https://event-scrapper-alxd.onrender.com/events")
+    fetch("https://event-scrapper-alxd.onrender.com/api/events")
       .then((res) => res.json())
       .then((data) => setEvents(data))
       .catch((err) => console.error("Failed to fetch events", err));
